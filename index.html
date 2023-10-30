@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+        <title>VINCENT LE'S PORTFOLIO</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;400&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="styles/default-style.css">
+        <script src="src/main.js" type="module"></script>
+    </head>
+    <body>
+        <header class="header">
+            <p id="responsive-disclaimer">(This site is best viewed on Desktop)</p>
+            <h3 class="header-content">VINCENT LE</a></h3>
+            <nav class="header-nav invisible">
+                <ul>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#projects-head">PROJECTS</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <nav class="navigation">
+            <ul>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#projects-head">PROJECTS</a></li>
+            </ul>
+        </nav>
+
+        <div class="wrapper">
+            <div class="video-container">
+                <video id="background-video" autoplay loop muted>
+                    <source src="./media/videos/GoodLuckValley_Gameplay.mp4" type="video/mp4">
+                    <source src="./media/videos/Shepherd_Gameplay.mp4" type="video/mp4">
+                    <source src="./media/videos/Voror_Gameplay.mp4" type="video/mp4">
+                    <source src="./media/videos/Soulbinder_Gameplay.mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay"></div>
+                <div class="content">
+                    <img src="./media/img/VincentLe_Picture.png" alt="Picture of Vincent Le" id="about">
+                    <h1>ABOUT ME</h1>
+                    <div class="about-desc">
+                        <p>
+                            My name is Vincent Le and I am currently a third-year Game Design & Development (GDD) student at the Rochester Institute of Technology (RIT). 
+                            My interests for game design include Graphics and Engine Programming, Game Audio Programming, Sound Design and Soundtrack Composition, and Narrative Design.
+                            My multitude of interests within game design stems from one core belief: <strong>Games should not just be fun, they should be worthwhile. </strong>
+                            As a long-time musician and storyteller, I have found that when these two art forms are used well within a game, then the overall experience is much more enjoyable to the player. 
+                            That is my goal: to make a worthwhile, fun, and intuitive experience for players that will hopefully change their perspective on certain themes, cultures, or experiences after playtime.
+                            <br><br><strong id="website-claim">NOTE: The HTML, CSS, and JavaScript of this website was all designed and created by me!</strong>
+                        </p>
+
+                        <div class="external-links">
+                            <a href="https://github.com/Le-Vincent56?tab=repositories" class="external-link"><i class="fa-brands fa-github"></i> GITHUB</a>
+                            <a href="https://soundcloud.com/user-643888929" class="external-link"><i class="fa-brands fa-soundcloud"></i> SOUNDCLOUD</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="skills">
+                <h1>SKILLS</h1>
+                <div class="skills-section">
+                    <div class="skill-box">
+                        <img src="./media/img/icons/Visual_Logos.png" alt="VS Logo">
+                        <h2>VISUAL STUDIO/CODE</h2>
+                        <p>C# and C++ for Visual Studio (2022), HTML, CSS, and JavaScript for Visual Studio Code. GitHub Integration, Handling Merges</p>
+                    </div>
+                    <div class="skill-box">
+                        <img src="./media/img/icons/Unity_Logo.png" alt="Unity Logo">
+                        <h2>UNITY</h2>
+                        <p>Basic Unity C# Scripting, Event-Based Programming, Scriptable Object Architecture, Namespace/Asmdef Organization, FMOD Integration, New Input System</p>
+                    </div>
+                    <div class="skill-box">
+                        <img src="./media/img/icons/Cubase_Logo.png" alt="Cubase Logo">
+                        <h2>CUBASE 12 PRO</h2>
+                        <p>Production, Mixing, and Mastering of Tracks</p>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="slideshow-nav" id="projects-head">
+                <h1>PROJECTS</h1>
+                <div class="slideshow-buttons">
+                    <a class="slideshow-btn selected" href="#code" id="code-btn">CODE</a>
+                    <a class="slideshow-btn" href="#music" id="music-btn">MUSIC</a>
+                    <a class="slideshow-btn" href="#writing" id="writing-btn">WRITING</a>
+                </div>
+            </div>
+
+            <div id="projects">
+                <div class="slideshow-container">
+                    <div class="slides">
+
+                        <!-- ----- CODE SLIDE ----- -->
+
+                        <div class="slide code" id="code-slide">
+                            <div class="code-flex">
+                                <div class="project-box" id="goodluckvalley">
+                                    <img class="overlay-content-screenshot" src="./media/img/screenshots/GoodLuckValley_Screenshot.png" alt="Good Luck Valley Screenshot">
+                                    <span class="project-labels">
+                                        <label class="csharp-label">C#</label>
+                                        <label class="unity-label">Unity</label>
+                                        <label class="audio-label">Audio</label>
+                                    </span>
+                                    <h2>GOOD LUCK VALLEY</h2>
+                                    <h3>SEPTEMBER 5, 2022 - PRESENT</h3>
+                                </div>
+                                <div class="project-box" id="shepherd">
+                                    <img class="overlay-content-screenshot" src="./media/img/screenshots/Shepherd_Screenshot.PNG" alt="Shepherd Screenshot">
+                                    <span class="project-labels">
+                                        <label class="csharp-label">C#</label>
+                                        <label class="unity-label">Unity</label>
+                                    </span>
+                                    <h2>SHEPHERD</h2>
+                                    <h3>OCTOBER 31 - DECEMBER 8, 2022</h3>
+                                </div>
+                                <div class="project-box" id="pixijsnake">
+                                    <img class="overlay-content-screenshot" src="./media/img/screenshots/PixiJSnake_Screenshot.PNG" alt="PixiJSnake Screenshot">
+                                    <span class="project-labels">
+                                        <label class="html-label">HTML</label>
+                                        <label class="css-label">CSS</label>
+                                        <label class="javascript-label">JavaScript</label>
+                                    </span>
+                                    <h2>PIXIJSNAKE</h2>
+                                    <h3>NOVEMBER 18 - DECEMBER 10, 2022</h3>
+                                </div>
+                                <div class="project-box" id="dndapi">
+                                    <img class="overlay-content-screenshot" src="./media/img/screenshots/DNDAPI_Screenshot.PNG" alt="DND API Screenshot">
+                                    <span class="project-labels">
+                                        <label class="html-label">HTML</label>
+                                        <label class="css-label">CSS</label>
+                                        <label class="javascript-label">JavaScript</label>
+                                    </span>
+                                    <h2>DND API</h2>
+                                    <h3>NOVEMBER 4 - NOVEMBER 18, 2022</h3>
+                                </div>
+                                <div class="project-box" id="voror">
+                                    <img class="overlay-content-screenshot" src="./media/img/screenshots/Voror_Screenshot.png" alt="Voror Screenshot">
+                                    <span class="project-labels">
+                                        <label class="csharp-label">C#</label>
+                                        <label class="unity-label">Unity</label>
+                                    </span>
+                                    <h2>VOROR</h2>
+                                    <h3>SEPTEMBER 11 - OCTOBER 16, 2022</h3>
+                                </div>
+                                <div class="project-box" id="soulbinder">
+                                    <img class="overlay-content-screenshot" src="./media/img/screenshots/Soulbinder_Screenshot.png" alt="Soulbinder Screenshot">
+                                    <span class="project-labels">
+                                        <label class="csharp-label">C#</label>
+                                        <label class="monogame-label">Monogame</label>
+                                    </span>
+                                    <h2>SOULBINDER</h2>
+                                    <h3>MARCH 3 - APRIL 25, 2022</h3>
+                                </div>
+                                <div class="project-box-inactive"></div>
+                                <div class="project-box-inactive"></div>
+                            </div>
+                        </div>
+
+                        <!-- ----- MUSIC SLIDE ----- -->
+
+                        <div class="slide music">
+                            <div class="sound-effect-section">
+                                <h2>SOUND DESIGN</h3>
+                                <a class="sound-design-btn" href="https://drive.google.com/drive/folders/1FySxJKZi5HMwUWMLGKcfGcEWhI8B4-8o?usp=sharing">GOOD LUCK VALLEY SOUND LIBRARY</a>
+                            </div>
+                            
+                            <div class="tracklist-container" id="goodluckvalley-tracklist">
+                                <h2>MUSIC/COMPOSITIONS</h2>
+                                <div class="track">
+                                    <div class="track-header">
+                                        <h2>GOOD LUCK VALLEY - TITLE THEME</h2>
+                                        <h4>BY VINCENT LE (2023)</h4>
+                                    </div>
+                                    <div class="track-controls">
+                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
+                                            <div class="drag-handle"></div>
+                                        </div>
+                                        <div class="track-duration">0:00</div>
+                                        <div class="volume-container">
+                                            <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
+                                            <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1">
+                                        </div>
+                                    </div>
+                                    <audio class="track-audio" src="./media/music/goodluckvalley/goodluckvalley-titletheme.wav" type="audio/wav"></audio>
+                                </div>
+                                <div class="track">
+                                    <div class="track-header">
+                                        <h2>GOOD LUCK VALLEY - FOREST THEME</h2>
+                                        <h4>BY VINCENT LE (2023)</h4>
+                                    </div>
+                                    <div class="track-controls">
+                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
+                                            <div class="drag-handle"></div>
+                                        </div>
+                                        <div class="track-duration">0:00</div>
+                                        <div class="volume-container">
+                                            <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
+                                            <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
+                                        </div>
+                                    </div>
+                                    <audio class="track-audio" src="./media/music/goodluckvalley/goodluckvalley-foresttheme.wav" type="audio/wav"></audio>
+                                </div>
+                                <div class="track">
+                                    <div class="track-header">
+                                        <h2>BLOOD AND GOLD - GRAND DESTINY</h2>
+                                        <h4>BY VINCENT LE (2023)</h4>
+                                    </div>
+                                    <div class="track-controls">
+                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
+                                            <div class="drag-handle"></div>
+                                        </div>
+                                        <div class="track-duration">0:00</div>
+                                        <div class="volume-container">
+                                            <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
+                                            <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
+                                        </div>
+                                    </div>
+                                    <audio class="track-audio" src="./media/music/bloodandgold-granddestiny.wav" type="audio/wav"></audio>
+                                </div>
+                                <div class="track">
+                                    <div class="track-header">
+                                        <h2>STAR-CROSSED - STAR-CROSSED</h2>
+                                        <h4>BY VINCENT LE (2020)</h4>
+                                    </div>
+                                    <div class="track-controls">
+                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
+                                            <div class="drag-handle"></div>
+                                        </div>
+                                        <div class="track-duration">0:00</div>
+                                        <div class="volume-container">
+                                            <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
+                                            <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
+                                        </div>
+                                    </div>
+                                    <audio class="track-audio" src="./media/music/star-crossed/starcrossed-starcrossed.mp3" type="audio/mpeg"></audio>
+                                </div>
+                                <div class="track">
+                                    <div class="track-header">
+                                        <h2>STAR-CROSSED - A SAFE HAVEN CALLED EAGON</h2>
+                                        <h4>BY VINCENT LE (2020)</h4>
+                                    </div>
+                                    <div class="track-controls">
+                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
+                                            <div class="drag-handle"></div>
+                                        </div>
+                                        <div class="track-duration">0:00</div>
+                                        <div class="volume-container">
+                                            <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
+                                            <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1">
+                                        </div>
+                                    </div>
+                                    <audio class="track-audio" src="./media/music/star-crossed/starcrossed-asafehavencalledeagon.mp3" type="audio/mpeg"></audio>
+                                </div>
+                                <div class="track">
+                                    <div class="track-header">
+                                        <h2>STAR-CROSSED - BASIL</h2>
+                                        <h4>BY VINCENT LE (2020)</h4>
+                                    </div>
+                                    <div class="track-controls">
+                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
+                                            <div class="drag-handle"></div>
+                                        </div>
+                                        <div class="track-duration">0:00</div>
+                                        <div class="volume-container">
+                                            <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
+                                            <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
+                                        </div>
+                                    </div>
+                                    <audio class="track-audio" src="./media/music/star-crossed/starcrossed-basil.mp3" type="audio/mpeg"></audio>
+                                </div>
+                                <div class="track">
+                                    <div class="track-header">
+                                        <h2>STAR-CROSSED - TAHFA</h2>
+                                        <h4>BY VINCENT LE (2020)</h4>
+                                    </div>
+                                    <div class="track-controls">
+                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
+                                            <div class="drag-handle"></div>
+                                        </div>
+                                        <div class="track-duration">0:00</div>
+                                        <div class="volume-container">
+                                            <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
+                                            <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
+                                        </div>
+                                    </div>
+                                    <audio class="track-audio" src="./media/music/star-crossed/starcrossed-tahfa.mp3" type="audio/mpeg"></audio>
+                                </div>
+                                <div class="track">
+                                    <div class="track-header">
+                                        <h2>STAR-CROSSED - AMARANTH</h2>
+                                        <h4>BY VINCENT LE (2020)</h4>
+                                    </div>
+                                    <div class="track-controls">
+                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
+                                            <div class="drag-handle"></div>
+                                        </div>
+                                        <div class="track-duration">0:00</div>
+                                        <div class="volume-container">
+                                            <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
+                                            <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
+                                        </div>
+                                    </div>
+                                    <audio class="track-audio" src="./media/music/star-crossed/starcrossed-amaranth.mp3" type="audio/mpeg"></audio>
+                                </div>
+                                <div class="track">
+                                    <div class="track-header">
+                                        <h2>STAR-CROSSED - DERRYL</h2>
+                                        <h4>BY VINCENT LE (2020)</h4>
+                                    </div>
+                                    <div class="track-controls">
+                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
+                                            <div class="drag-handle"></div>
+                                        </div>
+                                        <div class="track-duration">0:00</div>
+                                        <div class="volume-container">
+                                            <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
+                                            <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
+                                        </div>
+                                    </div>
+                                    <audio class="track-audio" src="./media/music/star-crossed/starcrossed-derryl.mp3" type="audio/mpeg"></audio>
+                                </div>
+                                <div class="track">
+                                    <div class="track-header">
+                                        <h2>STAR-CROSSED - MARIGOLD</h2>
+                                        <h4>BY VINCENT LE (2020)</h4>
+                                    </div>
+                                    <div class="track-controls">
+                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
+                                            <div class="drag-handle"></div>
+                                        </div>
+                                        <div class="track-duration">0:00</div>
+                                        <div class="volume-container">
+                                            <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
+                                            <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
+                                        </div>
+                                    </div>
+                                    <audio class="track-audio" src="./media/music/star-crossed/starcrossed-marigold.mp3" type="audio/mpeg"></audio>
+                                </div>
+                                <div class="track">
+                                    <div class="track-header">
+                                        <h2>STAR-CROSSED - THE SNAKE-CULT-GANG</h2>
+                                        <h4>BY VINCENT LE (2020)</h4>
+                                    </div>
+                                    <div class="track-controls">
+                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
+                                            <div class="drag-handle"></div>
+                                        </div>
+                                        <div class="track-duration">0:00</div>
+                                        <div class="volume-container">
+                                            <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
+                                            <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
+                                        </div>
+                                    </div>
+                                    <audio class="track-audio" src="./media/music/star-crossed/starcrossed-thesnakecultgang.mp3" type="audio/mpeg"></audio>
+                                </div>
+                                <div class="track">
+                                    <div class="track-header">
+                                        <h2>STAR-CROSSED - LUCY</h2>
+                                        <h4>BY VINCENT LE (2020)</h4>
+                                    </div>
+                                    <div class="track-controls">
+                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
+                                            <div class="drag-handle"></div>
+                                        </div>
+                                        <div class="track-duration">0:00</div>
+                                        <div class="volume-container">
+                                            <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
+                                            <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
+                                        </div>
+                                    </div>
+                                    <audio class="track-audio" src="./media/music/star-crossed/starcrossed-lucy.mp3" type="audio/mpeg"></audio>
+                                </div>
+                                <div class="track">
+                                    <div class="track-header">
+                                        <h2>STAR-CROSSED - THE ASHEN HEART</h2>
+                                        <h4>BY VINCENT LE (2021)</h4>
+                                    </div>
+                                    <div class="track-controls">
+                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
+                                            <div class="drag-handle"></div>
+                                        </div>
+                                        <div class="track-duration">0:00</div>
+                                        <div class="volume-container">
+                                            <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
+                                            <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
+                                        </div>
+                                    </div>
+                                    <audio class="track-audio" src="./media/music/star-crossed/starcrossed-theashenheart.mp3" type="audio/mpeg"></audio>
+                                </div>
+                                <div class="track">
+                                    <div class="track-header">
+                                        <h2>STAR-CROSSED - THE TRIUMVIRATE</h2>
+                                        <h4>BY VINCENT LE (2020)</h4>
+                                    </div>
+                                    <div class="track-controls">
+                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
+                                            <div class="drag-handle"></div>
+                                        </div>
+                                        <div class="track-duration">0:00</div>
+                                        <div class="volume-container">
+                                            <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
+                                            <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
+                                        </div>
+                                    </div>
+                                    <audio class="track-audio" src="./media/music/star-crossed/starcrossed-thetriumvirate.mp3" type="audio/mpeg"></audio>
+                                </div>
+                                <div class="track">
+                                    <div class="track-header">
+                                        <h2>STAR-CROSSED - FISHEYE AND REMORA</h2>
+                                        <h4>BY VINCENT LE (2021)</h4>
+                                    </div>
+                                    <div class="track-controls">
+                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
+                                            <div class="drag-handle"></div>
+                                        </div>
+                                        <div class="track-duration">0:00</div>
+                                        <div class="volume-container">
+                                            <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
+                                            <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
+                                        </div>
+                                    </div>
+                                    <audio class="track-audio" src="./media/music/star-crossed/starcrossed-fisheyeandremora.mp3" type="audio/mpeg"></audio>
+                                </div>
+                                <div class="track">
+                                    <div class="track-header">
+                                        <h2>STAR-CROSSED - THE ADJUDICATOR</h2>
+                                        <h4>BY VINCENT LE (2020)</h4>
+                                    </div>
+                                    <div class="track-controls">
+                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
+                                            <div class="drag-handle"></div>
+                                        </div>
+                                        <div class="track-duration">0:00</div>
+                                        <div class="volume-container">
+                                            <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
+                                            <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
+                                        </div>
+                                    </div>
+                                    <audio class="track-audio" src="./media/music/star-crossed/starcrossed-theadjudicator.mp3" type="audio/mpeg"></audio>
+                                </div>
+                                <div class="track">
+                                    <div class="track-header">
+                                        <h2>STAR-CROSSED - THE VAGABOND PRINCE AND THE HEIRS OF STONE</h2>
+                                        <h4>BY VINCENT LE (2021)</h4>
+                                    </div>
+                                    <div class="track-controls">
+                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
+                                            <div class="drag-handle"></div>
+                                        </div>
+                                        <div class="track-duration">0:00</div>
+                                        <div class="volume-container">
+                                            <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
+                                            <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
+                                        </div>
+                                    </div>
+                                    <audio class="track-audio" src="./media/music/star-crossed/starcrossed-thevagabondprince.mp3" type="audio/mpeg"></audio>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ----- WRITING SLIDE ----- -->
+
+                        <div class="slide writing">
+                            <div class="writing-flex">
+                                <div class="writing-box" id="alionsdance">
+                                    <img src="./media/img/covers/A Lion's Dance.png" alt="A Lion's Dance Cover" width="1275" height="1650">
+                                </div>
+                                <div class="writing-box-inactive"></div>
+                                <div class="writing-box-inactive"></div>
+                                <div class="writing-box-inactive"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="overlay">
+                <button class="close-button">&#10005;</button>
+
+                <!-- ----- CODE OVERLAYS ----- -->
+
+                <div class="overlay-content" id="goodluckvalley-overlay">
+                    <h1>GOOD LUCK VALLEY</h1>
+                    <img src="./media/img/screenshots/GoodLuckValley_Screenshot.png" alt="Good Luck Valley Screenshot">
+                    <div class="overlay-content-genre">
+                        <h3>GENRE: </h3>
+                        <p>2D, Puzzle, Platformer</p>
+                    </div>
+                    <div class="overlay-content-text">
+                        <p><em>Good Luck Valley</em> is a singleplayer, 2D puzzle-platformer in which the player takes the role of Anari,
+                            a young girl who finds herself in a mystical spirit world during a complicated time in her life.
+                            Traverse the spirit world’s unusual terrain via your magical bouncing mushrooms to get home safely
+                            and unveil the truth about this mysterious world.</p>
+                    </div>
+                    <div class="overlay-content-achievements">
+                        <h2>ACHIEVEMENTS</h2>
+                        <ul>
+                            <li>Created a C# (Unity) puzzle-platformer game in a team of six as Lead Programmer and Composer/Sound Designer</li>
+                            <li>Planned team coding architecture based on Unity Events and Scriptable Objects</li>
+                            <li>Organized completely using Namespaces and Assembly Definitions</li>
+                            <li>Helped design mechanics</li>
+                            <li>Designed core mechanics - Movement, Bouncing</li>
+                            <li>Designed systems: Audio Programming (FMOD), Post-Processing, Load/Save/Data Management, Animations/Cutscenes</li>
+                            <li>Composed tracks for Title, Prologue, and Level One using Cubase 12 using a Vertical Layering structure for looping</li>
+                            <li>Designed, edited, and implemented all sound effects</li>
+                            <li>Revised gameplay according to the reviews and critiques of MAGIC Spell Studios and Rockstar Games</li>
+                        </ul>
+                    </div>
+                    <a class="overlay-source-btn" href="https://hivemind-studios.itch.io/good-luck-valley" target="_blank">Play Good Luck Valley</a>
+                </div>
+                <div class="overlay-content" id="shepherd-overlay">
+                    <h1>SHEPHERD</h1>
+                    <img src="./media/img/screenshots/Shepherd_Screenshot.PNG" alt="Shepherd Screenshot">
+                    <div class="overlay-content-genre">
+                        <h3>GENRE: </h3>
+                        <p>2D, Puzzle, Simulation</p>
+                    </div>
+                    <div class="overlay-content-text">
+                        <p><em>Shepherd</em> is a 2D, puzzle, simulation game where you play as a sheep herder/shepherd, and go through multiple levels 
+                            of simulating how to navigate a herd of sheep into a single fenced area. With the limited resources you have, 
+                            use whatever you can, such as Dogs, Food, and Markers, to chase the sheep into the pen.</p>
+                    </div>
+                    <div class="overlay-content-achievements">
+                        <h2>ACHIEVEMENTS</h2>
+                        <ul>
+                            <li>Created a C# (Unity) puzzle, simulation game as a solo developer</li>
+                            <li>Designed mechanics and gameplay experience with a foundation of learning basic AI</li>
+                            <li>Incorporated AI tracking and flocking behaviors such as Seeking, Fleeing, Cohesion, Separation, and Separation</li>
+                            <li>Designed puzzles and UI</li>
+                        </ul>
+                    </div>
+                    <a class="overlay-source-btn" href="https://igme-202-2221.github.io/project-2-Le-Vincent56/" target="_blank">Play Shepherd</a>
+                </div>
+                <div class="overlay-content" id="pixijsnake-overlay">     
+                    <h1>PIXIJSNAKE</h1>
+                    <img src="./media/img/screenshots/PixiJSnake_Screenshot.PNG" alt="PIXIJSnake Screenshot">
+                    <div class="overlay-content-genre">
+                    </div>
+                    <div class="overlay-content-text">
+                        <p><em>PIXIJSnake</em> is a recreation of the classic <em>Snake</em> arcade game using JavaScript and 
+                        the PIXIJS Graphics Framework. The player can move the Snake through it's head, and the body will follow. 
+                        As the player collects food, their score will increase, but the snake will also get longer. 
+                        One loses once the Snake collides with itself or the game window's boundaries.</p>
+                    </div>
+                    <div class="overlay-content-achievements">
+                        <h2>ACHIEVEMENTS</h2>
+                        <ul>
+                            <li>Used JavaScript to interact and functionally use the PIXIJS Graphics Framework to display a game</li>
+                            <li>Recreated the classic <em>Snake</em> arcade game using JavaScript</li>
+                            <li>Used HTML5 and CSS to create a functional structure of a website and a professional design.</li>
+                        </ul>
+                    </div>
+                    <a class="overlay-source-btn" href="https://people.rit.edu/vdl9926/235/project3/" target="_blank">Play PIXIJSnake</a>
+                </div>
+                <div class="overlay-content" id="dndapi-overlay">
+                    <h1>DND 5E API</h1>
+                    <img src="./media/img/screenshots/DNDAPI_Screenshot.PNG" alt="DND 5E API Screenshot">
+                    <div class="overlay-content-genre">
+                    </div>
+                    <div class="overlay-content-text">
+                        <p>The <em>DND 5E API</em> utilizes an open-source DND 5E API to give users quick access to Magic Items,
+                            Monsters, and Spells. With the use of filters and a search bar, users can hone down their searches even more
+                            to find precisely what they need and they can find it quickly.</p>
+                    </div>
+                    <div class="overlay-content-achievements">
+                        <h2>ACHIEVEMENTS</h2>
+                        <ul>
+                            <li>Used JavaScript to access and display information through an open-source API.</li>
+                            <li>Implemented localStorage to save and store information through a browser</li>
+                            <li>Used HTML5 and CSS to create a functional structure of a website and a stylized design</li>
+                        </ul>
+                    </div>
+                    <a class="overlay-source-btn" href="https://people.rit.edu/vdl9926/235/project2/" target="_blank">Visit DND 5E API</a>
+                </div>
+                <div class="overlay-content" id="voror-overlay">
+                    <h1>VOROR</h1>
+                    <img src="./media/img/screenshots/Voror_Screenshot.png" alt="Voror Screenshot">
+                    <div class="overlay-content-genre">
+                        <h3>GENRE: </h3>
+                        <p>2D, Shoot-em-up</p>
+                    </div>
+                    <div class="overlay-content-text">
+                        <p><em>Voror (Vörðr)</em> is a game based on Vikings and Old Norse Mythology, where a Viking attempts to 
+                            protect his village from the monsters of Hel. You play as Viggo, the guardian of the village Toft 
+                            as the Gates of Hel has torn open. As most of the vikings have been sent to the frontline of the Gates, 
+                            you were left behind to protect the rest of the village. Save the villagers while fending off the mosnter of Hel 
+                            and see if you were to be the destined defender of not only Toft, but the world.</p>
+                    </div>
+                    <div class="overlay-content-achievements">
+                        <h2>ACHIEVEMENTS</h2>
+                        <ul>
+                            <li>Created a C# (Unity) shoot-em-up game as a solo developer</li>
+                            <li>Implemented full movement and bullet firing mechanics</li>
+                            <li>Applied knowledge of Enumerations and Unity Events to create four unique power-ups</li>
+                            <li>Designed UI and Menus using Unity Canvas and SceneManager</li>
+                        </ul>
+                    </div>
+                    <a class="overlay-source-btn" href="https://igme-202-2221.github.io/project-1-Le-Vincent56/" target="_blank">Play Voror</a>
+                </div>
+                <div class="overlay-content" id="soulbinder-overlay">
+                    <h1>SOULBINDER</h1>
+                    <img src="./media/img/screenshots/Soulbinder_Screenshot.png" alt="Soulbinder Valley Screenshot">
+                    <div class="overlay-content-genre">
+                        <h3>GENRE: </h3>
+                        <p>2D, Boss-rush, Metroidvania</p>
+                    </div>
+                    <div class="overlay-content-text">
+                        <p><em>Soulbinder</em> is 2D boss-rush, metroidvania game that follows a young, vengeful warlock who fights to 
+                            release his soul with the demon he had made a pact with. Explore the dungeons, defeat enemies, and collect
+                            spells as you train to encounter three unique bosses: The Executioner, The Statues, and The Demon</p>
+                    </div>
+                    <div class="overlay-content-achievements">
+                        <h2>ACHIEVEMENTS</h2>
+                        <ul>
+                            <li>Created a C# (Monogame) metroidvania, boss-rush game as a solo developer</li>
+                            <li>Worked on UI design and its implementation</li>
+                            <li>Developed interaction system</li>
+                            <li>Co-headed Boss mechanical design and functionality (The Executioner/The Statues) - including player tracking, 
+                                object interaction, hitbox implementation, and attack choice</li>
+                        </ul>
+                    </div>
+                    <a class="overlay-source-btn" href="https://github.com/Le-Vincent56/Soulbinder" target="_blank">Play Soulbinder (Newer GitHub)</a>
+                </div>
+
+                <!-- ----- WRITING OVERLAYS ----- -->
+                
+                <div class="overlay-content" id="alionsdance-overlay">
+                    <h1>A LION'S DANCE</h1>
+                    <img class="overlay-content-cover" src="./media/img/covers/A Lion's Dance.png" alt="A Lion's Dance Cover">
+                    <div class="overlay-content-imgsrc">
+                        <label>Image Source: Midjourney AI/Photoshop</label>
+                    </div>
+                    <div class="overlay-content-date">
+                        <h3>SEPTEMBER 2023 - PRESENT</h3>
+                    </div>
+                    <div class="overlay-content-genre">
+                        <h3>GENRE: </h3>
+                        <p>Military Fantasy/Historical Fiction</p>
+                    </div>
+                    <div class="overlay-content-text">
+                        <p>Vinh's ordinary life in South Quhoung is lifted out of his hands and into the gauntlets of war. Struggling with
+                            the cruelty of war, the weight of grief, and the burden of revenge, Vinh attempts to collect the remnants of his 
+                            life and piece it back together by force, or by victory. Inspired by the events of the Vietnam War, <em>A Lion's Dance</em> 
+                            imitates the Vietnamese experience within South Vietnam through the lens of fantasy. In addition to spreading knowledge of the 
+                            Vietnamese experience and culture, <em>A Lion's Dance</em> attempts to unravel the themes of the innate villainy of war and 
+                            its escalating and lasting consequences. 
+                            <br> 
+                            <br>
+                            <em>A Lion's Dance</em> is currently unfinished, but you can read Act I (Chapters I-V) here:
+                        </p>
+                    </div>
+                    <a class="overlay-source-btn" href="https://docs.google.com/document/d/1svc1BorAvgKCHo8bZ60td_cq2rWEMSO9dIOCOGKqOAg/edit?usp=sharing" target="_blank">READ ACT I</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
