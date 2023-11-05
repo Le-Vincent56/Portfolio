@@ -30,13 +30,28 @@ let initSmoothLinks = () => {
 /* ---- SELECTED SLIDESHOW BUTTONS ----- */
 let initButtons = () => {
     // Select all buttons
-    const buttons = document.querySelectorAll(".slideshow-btn");
+    const outerButtons = document.querySelectorAll(".slideshow-btn");
+    const innerButtons = document.querySelectorAll(".inner-slideshow-btn");
 
     // For each button add a click event
-    buttons.forEach((button) => {
+    outerButtons.forEach((button) => {
         button.addEventListener('click', () => {
             // Select all buttons and removed selected
             const buttonsList = document.querySelectorAll(".slideshow-btn");
+            buttonsList.forEach((buttonInList) => {
+                buttonInList.classList.remove("selected");
+            })
+
+            // Add selected to the current button
+            button.classList.add("selected");
+        });
+    });
+
+    // For each button add a click event
+    innerButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+            // Select all buttons and removed selected
+            const buttonsList = document.querySelectorAll(".inner-slideshow-btn");
             buttonsList.forEach((buttonInList) => {
                 buttonInList.classList.remove("selected");
             })

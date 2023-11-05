@@ -19,8 +19,10 @@ let init = () => {
     // Init overlay
     pOverlay.initOverlay();
 
-    // Init slideshow
+    // Init slideshows
     pSlideShow.initSlideShow();
+    pSlideShow.initInnerSlideShow();
+    pSlideShow.adjustHeight();
 
     // Init music
     music.initTracks();
@@ -31,6 +33,9 @@ let init = () => {
 
     // Start playing video
     bgVideo.changeVideoAfterInterval();
+
+    // Make sure the slideshow container height is fully initialized
+    pSlideShow.adjustHeightInit();
 }
 
 init();

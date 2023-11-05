@@ -92,7 +92,7 @@
                 <h1>PROJECTS</h1>
                 <div class="slideshow-buttons">
                     <a class="slideshow-btn selected" href="#code" id="code-btn">CODE</a>
-                    <a class="slideshow-btn" href="#music" id="music-btn">MUSIC</a>
+                    <a class="slideshow-btn" href="#music" id="music-btn">MUSIC/SOUND</a>
                     <a class="slideshow-btn" href="#writing" id="writing-btn">WRITING</a>
                 </div>
             </div>
@@ -105,6 +105,15 @@
 
                         <div class="slide code" id="code-slide">
                             <div class="code-flex">
+                                <div class="project-box" id="tripartite">
+                                    <img class="overlay-content-screenshot" src="./media/img/screenshots/Tripartite_Screenshot.png" alt="Tripartite Screenshot">
+                                    <span class="project-labels">
+                                        <label class="csharp-label">C#</label>
+                                        <label class="unity-label">Unity</label>
+                                    </span>
+                                    <h2>TRIPARTITE</h2>
+                                    <h3>OCTOBER 30, 2023 - PRESENT</h3>
+                                </div>
                                 <div class="project-box" id="goodluckvalley">
                                     <img class="overlay-content-screenshot" src="./media/img/screenshots/GoodLuckValley_Screenshot.png" alt="Good Luck Valley Screenshot">
                                     <span class="project-labels">
@@ -167,338 +176,358 @@
                             </div>
                         </div>
 
-                        <!-- ----- MUSIC SLIDE ----- -->
+                        
 
+                        <!-- ----- MUSIC SLIDE ----- -->
                         <div class="slide music">
-                            <div class="sound-effect-section">
-                                <h2>SOUND DESIGN</h3>
-                                <a class="sound-design-btn" href="https://drive.google.com/drive/folders/1FySxJKZi5HMwUWMLGKcfGcEWhI8B4-8o?usp=sharing">GOOD LUCK VALLEY SOUND LIBRARY</a>
+                            <div class="inner-slideshow-nav">
+                                <div class="inner-slideshow-buttons">
+                                    <a class="inner-slideshow-btn selected" href="#music-tracks" id="tracks-btn">MUSIC</a>
+                                    <a class="inner-slideshow-btn" href="#sound-effects" id="sound-effects-btn">SOUND EFFECTS</a>
+                                </div>
                             </div>
-                            
-                            <div class="tracklist-container" id="goodluckvalley-tracklist">
-                                <h2>MUSIC/COMPOSITIONS</h2>
-                                <div class="track">
-                                    <div class="track-header">
-                                        <h2>GOOD LUCK VALLEY - TITLE THEME</h2>
-                                        <h4>BY VINCENT LE (2023)</h4>
-                                    </div>
-                                    <div class="track-controls">
-                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
-                                        <div class="progress-bar">
-                                            <div class="progress"></div>
-                                            <div class="drag-handle"></div>
+
+                            <div class="inner-slideshow-container">
+                                <div class="inner-slides">
+                                    <div class="inner-slide music-tracks">
+                                        <div class="tracklist-container" id="goodluckvalley-tracklist">
+                                            <h2>MUSIC/COMPOSITIONS</h2>
+                                            <div class="track">
+                                                <div class="track-header">
+                                                    <h2>GOOD LUCK VALLEY - TITLE THEME</h2>
+                                                    <h4>BY VINCENT LE (2023)</h4>
+                                                </div>
+                                                <div class="track-controls">
+                                                    <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                                    <div class="progress-bar">
+                                                        <div class="progress"></div>
+                                                        <div class="drag-handle"></div>
+                                                    </div>
+                                                    <div class="track-duration">0:00</div>
+                                                    <div class="volume-container">
+                                                        <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
+                                                        <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1">
+                                                    </div>
+                                                </div>
+                                                <audio class="track-audio" src="./media/music/goodluckvalley/goodluckvalley-titletheme.wav" type="audio/wav"></audio>
+                                            </div>
+                                            <div class="track">
+                                                <div class="track-header">
+                                                    <h2>GOOD LUCK VALLEY - FOREST THEME</h2>
+                                                    <h4>BY VINCENT LE (2023)</h4>
+                                                </div>
+                                                <div class="track-controls">
+                                                    <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                                    <div class="progress-bar">
+                                                        <div class="progress"></div>
+                                                        <div class="drag-handle"></div>
+                                                    </div>
+                                                    <div class="track-duration">0:00</div>
+                                                    <div class="volume-container">
+                                                        <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
+                                                        <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
+                                                    </div>
+                                                </div>
+                                                <audio class="track-audio" src="./media/music/goodluckvalley/goodluckvalley-foresttheme.wav" type="audio/wav"></audio>
+                                            </div>
+                                            <div class="track">
+                                                <div class="track-header">
+                                                    <h2>BLOOD AND GOLD - GRAND DESTINY</h2>
+                                                    <h4>BY VINCENT LE (2023)</h4>
+                                                </div>
+                                                <div class="track-controls">
+                                                    <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                                    <div class="progress-bar">
+                                                        <div class="progress"></div>
+                                                        <div class="drag-handle"></div>
+                                                    </div>
+                                                    <div class="track-duration">0:00</div>
+                                                    <div class="volume-container">
+                                                        <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
+                                                        <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
+                                                    </div>
+                                                </div>
+                                                <audio class="track-audio" src="./media/music/bloodandgold-granddestiny.wav" type="audio/wav"></audio>
+                                            </div>
+                                            <div class="track">
+                                                <div class="track-header">
+                                                    <h2>STAR-CROSSED - STAR-CROSSED</h2>
+                                                    <h4>BY VINCENT LE (2020)</h4>
+                                                </div>
+                                                <div class="track-controls">
+                                                    <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                                    <div class="progress-bar">
+                                                        <div class="progress"></div>
+                                                        <div class="drag-handle"></div>
+                                                    </div>
+                                                    <div class="track-duration">0:00</div>
+                                                    <div class="volume-container">
+                                                        <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
+                                                        <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
+                                                    </div>
+                                                </div>
+                                                <audio class="track-audio" src="./media/music/star-crossed/starcrossed-starcrossed.mp3" type="audio/mpeg"></audio>
+                                            </div>
+                                            <div class="track">
+                                                <div class="track-header">
+                                                    <h2>STAR-CROSSED - A SAFE HAVEN CALLED EAGON</h2>
+                                                    <h4>BY VINCENT LE (2020)</h4>
+                                                </div>
+                                                <div class="track-controls">
+                                                    <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                                    <div class="progress-bar">
+                                                        <div class="progress"></div>
+                                                        <div class="drag-handle"></div>
+                                                    </div>
+                                                    <div class="track-duration">0:00</div>
+                                                    <div class="volume-container">
+                                                        <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
+                                                        <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1">
+                                                    </div>
+                                                </div>
+                                                <audio class="track-audio" src="./media/music/star-crossed/starcrossed-asafehavencalledeagon.mp3" type="audio/mpeg"></audio>
+                                            </div>
+                                            <div class="track">
+                                                <div class="track-header">
+                                                    <h2>STAR-CROSSED - BASIL</h2>
+                                                    <h4>BY VINCENT LE (2020)</h4>
+                                                </div>
+                                                <div class="track-controls">
+                                                    <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                                    <div class="progress-bar">
+                                                        <div class="progress"></div>
+                                                        <div class="drag-handle"></div>
+                                                    </div>
+                                                    <div class="track-duration">0:00</div>
+                                                    <div class="volume-container">
+                                                        <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
+                                                        <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
+                                                    </div>
+                                                </div>
+                                                <audio class="track-audio" src="./media/music/star-crossed/starcrossed-basil.mp3" type="audio/mpeg"></audio>
+                                            </div>
+                                            <div class="track">
+                                                <div class="track-header">
+                                                    <h2>STAR-CROSSED - TAHFA</h2>
+                                                    <h4>BY VINCENT LE (2020)</h4>
+                                                </div>
+                                                <div class="track-controls">
+                                                    <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                                    <div class="progress-bar">
+                                                        <div class="progress"></div>
+                                                        <div class="drag-handle"></div>
+                                                    </div>
+                                                    <div class="track-duration">0:00</div>
+                                                    <div class="volume-container">
+                                                        <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
+                                                        <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
+                                                    </div>
+                                                </div>
+                                                <audio class="track-audio" src="./media/music/star-crossed/starcrossed-tahfa.mp3" type="audio/mpeg"></audio>
+                                            </div>
+                                            <div class="track">
+                                                <div class="track-header">
+                                                    <h2>STAR-CROSSED - AMARANTH</h2>
+                                                    <h4>BY VINCENT LE (2020)</h4>
+                                                </div>
+                                                <div class="track-controls">
+                                                    <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                                    <div class="progress-bar">
+                                                        <div class="progress"></div>
+                                                        <div class="drag-handle"></div>
+                                                    </div>
+                                                    <div class="track-duration">0:00</div>
+                                                    <div class="volume-container">
+                                                        <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
+                                                        <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
+                                                    </div>
+                                                </div>
+                                                <audio class="track-audio" src="./media/music/star-crossed/starcrossed-amaranth.mp3" type="audio/mpeg"></audio>
+                                            </div>
+                                            <div class="track">
+                                                <div class="track-header">
+                                                    <h2>STAR-CROSSED - DERRYL</h2>
+                                                    <h4>BY VINCENT LE (2020)</h4>
+                                                </div>
+                                                <div class="track-controls">
+                                                    <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                                    <div class="progress-bar">
+                                                        <div class="progress"></div>
+                                                        <div class="drag-handle"></div>
+                                                    </div>
+                                                    <div class="track-duration">0:00</div>
+                                                    <div class="volume-container">
+                                                        <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
+                                                        <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
+                                                    </div>
+                                                </div>
+                                                <audio class="track-audio" src="./media/music/star-crossed/starcrossed-derryl.mp3" type="audio/mpeg"></audio>
+                                            </div>
+                                            <div class="track">
+                                                <div class="track-header">
+                                                    <h2>STAR-CROSSED - MARIGOLD</h2>
+                                                    <h4>BY VINCENT LE (2020)</h4>
+                                                </div>
+                                                <div class="track-controls">
+                                                    <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                                    <div class="progress-bar">
+                                                        <div class="progress"></div>
+                                                        <div class="drag-handle"></div>
+                                                    </div>
+                                                    <div class="track-duration">0:00</div>
+                                                    <div class="volume-container">
+                                                        <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
+                                                        <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
+                                                    </div>
+                                                </div>
+                                                <audio class="track-audio" src="./media/music/star-crossed/starcrossed-marigold.mp3" type="audio/mpeg"></audio>
+                                            </div>
+                                            <div class="track">
+                                                <div class="track-header">
+                                                    <h2>STAR-CROSSED - THE SNAKE-CULT-GANG</h2>
+                                                    <h4>BY VINCENT LE (2020)</h4>
+                                                </div>
+                                                <div class="track-controls">
+                                                    <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                                    <div class="progress-bar">
+                                                        <div class="progress"></div>
+                                                        <div class="drag-handle"></div>
+                                                    </div>
+                                                    <div class="track-duration">0:00</div>
+                                                    <div class="volume-container">
+                                                        <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
+                                                        <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
+                                                    </div>
+                                                </div>
+                                                <audio class="track-audio" src="./media/music/star-crossed/starcrossed-thesnakecultgang.mp3" type="audio/mpeg"></audio>
+                                            </div>
+                                            <div class="track">
+                                                <div class="track-header">
+                                                    <h2>STAR-CROSSED - LUCY</h2>
+                                                    <h4>BY VINCENT LE (2020)</h4>
+                                                </div>
+                                                <div class="track-controls">
+                                                    <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                                    <div class="progress-bar">
+                                                        <div class="progress"></div>
+                                                        <div class="drag-handle"></div>
+                                                    </div>
+                                                    <div class="track-duration">0:00</div>
+                                                    <div class="volume-container">
+                                                        <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
+                                                        <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
+                                                    </div>
+                                                </div>
+                                                <audio class="track-audio" src="./media/music/star-crossed/starcrossed-lucy.mp3" type="audio/mpeg"></audio>
+                                            </div>
+                                            <div class="track">
+                                                <div class="track-header">
+                                                    <h2>STAR-CROSSED - THE ASHEN HEART</h2>
+                                                    <h4>BY VINCENT LE (2021)</h4>
+                                                </div>
+                                                <div class="track-controls">
+                                                    <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                                    <div class="progress-bar">
+                                                        <div class="progress"></div>
+                                                        <div class="drag-handle"></div>
+                                                    </div>
+                                                    <div class="track-duration">0:00</div>
+                                                    <div class="volume-container">
+                                                        <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
+                                                        <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
+                                                    </div>
+                                                </div>
+                                                <audio class="track-audio" src="./media/music/star-crossed/starcrossed-theashenheart.mp3" type="audio/mpeg"></audio>
+                                            </div>
+                                            <div class="track">
+                                                <div class="track-header">
+                                                    <h2>STAR-CROSSED - THE TRIUMVIRATE</h2>
+                                                    <h4>BY VINCENT LE (2020)</h4>
+                                                </div>
+                                                <div class="track-controls">
+                                                    <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                                    <div class="progress-bar">
+                                                        <div class="progress"></div>
+                                                        <div class="drag-handle"></div>
+                                                    </div>
+                                                    <div class="track-duration">0:00</div>
+                                                    <div class="volume-container">
+                                                        <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
+                                                        <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
+                                                    </div>
+                                                </div>
+                                                <audio class="track-audio" src="./media/music/star-crossed/starcrossed-thetriumvirate.mp3" type="audio/mpeg"></audio>
+                                            </div>
+                                            <div class="track">
+                                                <div class="track-header">
+                                                    <h2>STAR-CROSSED - FISHEYE AND REMORA</h2>
+                                                    <h4>BY VINCENT LE (2021)</h4>
+                                                </div>
+                                                <div class="track-controls">
+                                                    <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                                    <div class="progress-bar">
+                                                        <div class="progress"></div>
+                                                        <div class="drag-handle"></div>
+                                                    </div>
+                                                    <div class="track-duration">0:00</div>
+                                                    <div class="volume-container">
+                                                        <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
+                                                        <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
+                                                    </div>
+                                                </div>
+                                                <audio class="track-audio" src="./media/music/star-crossed/starcrossed-fisheyeandremora.mp3" type="audio/mpeg"></audio>
+                                            </div>
+                                            <div class="track">
+                                                <div class="track-header">
+                                                    <h2>STAR-CROSSED - THE ADJUDICATOR</h2>
+                                                    <h4>BY VINCENT LE (2020)</h4>
+                                                </div>
+                                                <div class="track-controls">
+                                                    <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                                    <div class="progress-bar">
+                                                        <div class="progress"></div>
+                                                        <div class="drag-handle"></div>
+                                                    </div>
+                                                    <div class="track-duration">0:00</div>
+                                                    <div class="volume-container">
+                                                        <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
+                                                        <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
+                                                    </div>
+                                                </div>
+                                                <audio class="track-audio" src="./media/music/star-crossed/starcrossed-theadjudicator.mp3" type="audio/mpeg"></audio>
+                                            </div>
+                                            <div class="track">
+                                                <div class="track-header">
+                                                    <h2>STAR-CROSSED - THE VAGABOND PRINCE AND THE HEIRS OF STONE</h2>
+                                                    <h4>BY VINCENT LE (2021)</h4>
+                                                </div>
+                                                <div class="track-controls">
+                                                    <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                                    <div class="progress-bar">
+                                                        <div class="progress"></div>
+                                                        <div class="drag-handle"></div>
+                                                    </div>
+                                                    <div class="track-duration">0:00</div>
+                                                    <div class="volume-container">
+                                                        <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
+                                                        <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
+                                                    </div>
+                                                </div>
+                                                <audio class="track-audio" src="./media/music/star-crossed/starcrossed-thevagabondprince.mp3" type="audio/mpeg"></audio>
+                                            </div>
                                         </div>
-                                        <div class="track-duration">0:00</div>
-                                        <div class="volume-container">
-                                            <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
-                                            <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1">
+                                    </div>
+
+                                    <div class="inner-slide sound-effects">
+                                        <div class="sound-effect-section">
+                                            <h2>SOUND DESIGN</h3>
+                                                <div id="goodluckvalley-soundshowcase">
+                                                    <h4>GOOD LUCK VALLEY</h4>
+                                                    <iframe src="https://www.youtube.com/embed/Q5cP-lTzGP8" title="Vincent Le - Good Luck Valley Sound Design Showcase" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="sound-design-frame"></iframe>
+                                                    <a class="sound-design-btn" href="https://drive.google.com/drive/folders/1FySxJKZi5HMwUWMLGKcfGcEWhI8B4-8o?usp=sharing">GOOD LUCK VALLEY SOUND LIBRARY</a>
+                                                </div>
                                         </div>
                                     </div>
-                                    <audio class="track-audio" src="./media/music/goodluckvalley/goodluckvalley-titletheme.wav" type="audio/wav"></audio>
-                                </div>
-                                <div class="track">
-                                    <div class="track-header">
-                                        <h2>GOOD LUCK VALLEY - FOREST THEME</h2>
-                                        <h4>BY VINCENT LE (2023)</h4>
-                                    </div>
-                                    <div class="track-controls">
-                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
-                                        <div class="progress-bar">
-                                            <div class="progress"></div>
-                                            <div class="drag-handle"></div>
-                                        </div>
-                                        <div class="track-duration">0:00</div>
-                                        <div class="volume-container">
-                                            <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
-                                            <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
-                                        </div>
-                                    </div>
-                                    <audio class="track-audio" src="./media/music/goodluckvalley/goodluckvalley-foresttheme.wav" type="audio/wav"></audio>
-                                </div>
-                                <div class="track">
-                                    <div class="track-header">
-                                        <h2>BLOOD AND GOLD - GRAND DESTINY</h2>
-                                        <h4>BY VINCENT LE (2023)</h4>
-                                    </div>
-                                    <div class="track-controls">
-                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
-                                        <div class="progress-bar">
-                                            <div class="progress"></div>
-                                            <div class="drag-handle"></div>
-                                        </div>
-                                        <div class="track-duration">0:00</div>
-                                        <div class="volume-container">
-                                            <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
-                                            <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
-                                        </div>
-                                    </div>
-                                    <audio class="track-audio" src="./media/music/bloodandgold-granddestiny.wav" type="audio/wav"></audio>
-                                </div>
-                                <div class="track">
-                                    <div class="track-header">
-                                        <h2>STAR-CROSSED - STAR-CROSSED</h2>
-                                        <h4>BY VINCENT LE (2020)</h4>
-                                    </div>
-                                    <div class="track-controls">
-                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
-                                        <div class="progress-bar">
-                                            <div class="progress"></div>
-                                            <div class="drag-handle"></div>
-                                        </div>
-                                        <div class="track-duration">0:00</div>
-                                        <div class="volume-container">
-                                            <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
-                                            <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
-                                        </div>
-                                    </div>
-                                    <audio class="track-audio" src="./media/music/star-crossed/starcrossed-starcrossed.mp3" type="audio/mpeg"></audio>
-                                </div>
-                                <div class="track">
-                                    <div class="track-header">
-                                        <h2>STAR-CROSSED - A SAFE HAVEN CALLED EAGON</h2>
-                                        <h4>BY VINCENT LE (2020)</h4>
-                                    </div>
-                                    <div class="track-controls">
-                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
-                                        <div class="progress-bar">
-                                            <div class="progress"></div>
-                                            <div class="drag-handle"></div>
-                                        </div>
-                                        <div class="track-duration">0:00</div>
-                                        <div class="volume-container">
-                                            <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
-                                            <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1">
-                                        </div>
-                                    </div>
-                                    <audio class="track-audio" src="./media/music/star-crossed/starcrossed-asafehavencalledeagon.mp3" type="audio/mpeg"></audio>
-                                </div>
-                                <div class="track">
-                                    <div class="track-header">
-                                        <h2>STAR-CROSSED - BASIL</h2>
-                                        <h4>BY VINCENT LE (2020)</h4>
-                                    </div>
-                                    <div class="track-controls">
-                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
-                                        <div class="progress-bar">
-                                            <div class="progress"></div>
-                                            <div class="drag-handle"></div>
-                                        </div>
-                                        <div class="track-duration">0:00</div>
-                                        <div class="volume-container">
-                                            <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
-                                            <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
-                                        </div>
-                                    </div>
-                                    <audio class="track-audio" src="./media/music/star-crossed/starcrossed-basil.mp3" type="audio/mpeg"></audio>
-                                </div>
-                                <div class="track">
-                                    <div class="track-header">
-                                        <h2>STAR-CROSSED - TAHFA</h2>
-                                        <h4>BY VINCENT LE (2020)</h4>
-                                    </div>
-                                    <div class="track-controls">
-                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
-                                        <div class="progress-bar">
-                                            <div class="progress"></div>
-                                            <div class="drag-handle"></div>
-                                        </div>
-                                        <div class="track-duration">0:00</div>
-                                        <div class="volume-container">
-                                            <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
-                                            <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
-                                        </div>
-                                    </div>
-                                    <audio class="track-audio" src="./media/music/star-crossed/starcrossed-tahfa.mp3" type="audio/mpeg"></audio>
-                                </div>
-                                <div class="track">
-                                    <div class="track-header">
-                                        <h2>STAR-CROSSED - AMARANTH</h2>
-                                        <h4>BY VINCENT LE (2020)</h4>
-                                    </div>
-                                    <div class="track-controls">
-                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
-                                        <div class="progress-bar">
-                                            <div class="progress"></div>
-                                            <div class="drag-handle"></div>
-                                        </div>
-                                        <div class="track-duration">0:00</div>
-                                        <div class="volume-container">
-                                            <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
-                                            <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
-                                        </div>
-                                    </div>
-                                    <audio class="track-audio" src="./media/music/star-crossed/starcrossed-amaranth.mp3" type="audio/mpeg"></audio>
-                                </div>
-                                <div class="track">
-                                    <div class="track-header">
-                                        <h2>STAR-CROSSED - DERRYL</h2>
-                                        <h4>BY VINCENT LE (2020)</h4>
-                                    </div>
-                                    <div class="track-controls">
-                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
-                                        <div class="progress-bar">
-                                            <div class="progress"></div>
-                                            <div class="drag-handle"></div>
-                                        </div>
-                                        <div class="track-duration">0:00</div>
-                                        <div class="volume-container">
-                                            <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
-                                            <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
-                                        </div>
-                                    </div>
-                                    <audio class="track-audio" src="./media/music/star-crossed/starcrossed-derryl.mp3" type="audio/mpeg"></audio>
-                                </div>
-                                <div class="track">
-                                    <div class="track-header">
-                                        <h2>STAR-CROSSED - MARIGOLD</h2>
-                                        <h4>BY VINCENT LE (2020)</h4>
-                                    </div>
-                                    <div class="track-controls">
-                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
-                                        <div class="progress-bar">
-                                            <div class="progress"></div>
-                                            <div class="drag-handle"></div>
-                                        </div>
-                                        <div class="track-duration">0:00</div>
-                                        <div class="volume-container">
-                                            <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
-                                            <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
-                                        </div>
-                                    </div>
-                                    <audio class="track-audio" src="./media/music/star-crossed/starcrossed-marigold.mp3" type="audio/mpeg"></audio>
-                                </div>
-                                <div class="track">
-                                    <div class="track-header">
-                                        <h2>STAR-CROSSED - THE SNAKE-CULT-GANG</h2>
-                                        <h4>BY VINCENT LE (2020)</h4>
-                                    </div>
-                                    <div class="track-controls">
-                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
-                                        <div class="progress-bar">
-                                            <div class="progress"></div>
-                                            <div class="drag-handle"></div>
-                                        </div>
-                                        <div class="track-duration">0:00</div>
-                                        <div class="volume-container">
-                                            <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
-                                            <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
-                                        </div>
-                                    </div>
-                                    <audio class="track-audio" src="./media/music/star-crossed/starcrossed-thesnakecultgang.mp3" type="audio/mpeg"></audio>
-                                </div>
-                                <div class="track">
-                                    <div class="track-header">
-                                        <h2>STAR-CROSSED - LUCY</h2>
-                                        <h4>BY VINCENT LE (2020)</h4>
-                                    </div>
-                                    <div class="track-controls">
-                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
-                                        <div class="progress-bar">
-                                            <div class="progress"></div>
-                                            <div class="drag-handle"></div>
-                                        </div>
-                                        <div class="track-duration">0:00</div>
-                                        <div class="volume-container">
-                                            <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
-                                            <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
-                                        </div>
-                                    </div>
-                                    <audio class="track-audio" src="./media/music/star-crossed/starcrossed-lucy.mp3" type="audio/mpeg"></audio>
-                                </div>
-                                <div class="track">
-                                    <div class="track-header">
-                                        <h2>STAR-CROSSED - THE ASHEN HEART</h2>
-                                        <h4>BY VINCENT LE (2021)</h4>
-                                    </div>
-                                    <div class="track-controls">
-                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
-                                        <div class="progress-bar">
-                                            <div class="progress"></div>
-                                            <div class="drag-handle"></div>
-                                        </div>
-                                        <div class="track-duration">0:00</div>
-                                        <div class="volume-container">
-                                            <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
-                                            <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
-                                        </div>
-                                    </div>
-                                    <audio class="track-audio" src="./media/music/star-crossed/starcrossed-theashenheart.mp3" type="audio/mpeg"></audio>
-                                </div>
-                                <div class="track">
-                                    <div class="track-header">
-                                        <h2>STAR-CROSSED - THE TRIUMVIRATE</h2>
-                                        <h4>BY VINCENT LE (2020)</h4>
-                                    </div>
-                                    <div class="track-controls">
-                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
-                                        <div class="progress-bar">
-                                            <div class="progress"></div>
-                                            <div class="drag-handle"></div>
-                                        </div>
-                                        <div class="track-duration">0:00</div>
-                                        <div class="volume-container">
-                                            <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
-                                            <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
-                                        </div>
-                                    </div>
-                                    <audio class="track-audio" src="./media/music/star-crossed/starcrossed-thetriumvirate.mp3" type="audio/mpeg"></audio>
-                                </div>
-                                <div class="track">
-                                    <div class="track-header">
-                                        <h2>STAR-CROSSED - FISHEYE AND REMORA</h2>
-                                        <h4>BY VINCENT LE (2021)</h4>
-                                    </div>
-                                    <div class="track-controls">
-                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
-                                        <div class="progress-bar">
-                                            <div class="progress"></div>
-                                            <div class="drag-handle"></div>
-                                        </div>
-                                        <div class="track-duration">0:00</div>
-                                        <div class="volume-container">
-                                            <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
-                                            <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
-                                        </div>
-                                    </div>
-                                    <audio class="track-audio" src="./media/music/star-crossed/starcrossed-fisheyeandremora.mp3" type="audio/mpeg"></audio>
-                                </div>
-                                <div class="track">
-                                    <div class="track-header">
-                                        <h2>STAR-CROSSED - THE ADJUDICATOR</h2>
-                                        <h4>BY VINCENT LE (2020)</h4>
-                                    </div>
-                                    <div class="track-controls">
-                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
-                                        <div class="progress-bar">
-                                            <div class="progress"></div>
-                                            <div class="drag-handle"></div>
-                                        </div>
-                                        <div class="track-duration">0:00</div>
-                                        <div class="volume-container">
-                                            <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
-                                            <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
-                                        </div>
-                                    </div>
-                                    <audio class="track-audio" src="./media/music/star-crossed/starcrossed-theadjudicator.mp3" type="audio/mpeg"></audio>
-                                </div>
-                                <div class="track">
-                                    <div class="track-header">
-                                        <h2>STAR-CROSSED - THE VAGABOND PRINCE AND THE HEIRS OF STONE</h2>
-                                        <h4>BY VINCENT LE (2021)</h4>
-                                    </div>
-                                    <div class="track-controls">
-                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
-                                        <div class="progress-bar">
-                                            <div class="progress"></div>
-                                            <div class="drag-handle"></div>
-                                        </div>
-                                        <div class="track-duration">0:00</div>
-                                        <div class="volume-container">
-                                            <div class="volume-icon"><i class="fa-solid fa-volume-high"></i></div>
-                                            <input type="range" class="volume-slider slider-progress hidden" min="0" max="1" step="0.01" value="1" hidden>
-                                        </div>
-                                    </div>
-                                    <audio class="track-audio" src="./media/music/star-crossed/starcrossed-thevagabondprince.mp3" type="audio/mpeg"></audio>
                                 </div>
                             </div>
                         </div>
@@ -524,9 +553,33 @@
 
                 <!-- ----- CODE OVERLAYS ----- -->
 
+                <div class="overlay-content" id="tripartite-overlay">
+                    <h1>TRIPARTITE</h1>
+                    <img src="./media/img/screenshots/Tripartite_Screenshot.png" alt="Tripartite Screenshot" class="overlay-img">
+                    <div class="overlay-content-genre">
+                        <h3>GENRE: </h3>
+                        <p>Text-based, Interactive Story</p>
+                    </div>
+                    <div class="overlay-content-text">
+                        <p> <em>Tripartite</em> is an interactive fiction work that revolves around Dane, an amnesiac trapped in a blind world, 
+                            and three voices, Egor, Ida, and Summer. As an attempt to understand context-aware dialogue systems, 
+                            Tripartite follows a branching narrative as the user makes choices that influence the story and 
+                            the dialogue that is said during it.</p>
+                    </div>
+                    <div class="overlay-content-achievements">
+                        <h2>ACHIEVEMENTS</h2>
+                        <ul>
+                            <li>Created a C# (Unity)-based interactive fiction story as a solo dev</li>
+                            <li>Implemented a Fuzzy Pattern Matching, Event-Based dialogue system</li>
+                            <li>Wrote and designed narrative characters and structure</li>
+                            <li>Coded many UI-based scripts to help with UI/UX design</li>
+                        </ul>
+                    </div>
+                    <a class="overlay-source-btn" href="https://github.com/Le-Vincent56/Tripartite" target="_blank">Tripartite GitHub</a>
+                </div>
                 <div class="overlay-content" id="goodluckvalley-overlay">
                     <h1>GOOD LUCK VALLEY</h1>
-                    <img src="./media/img/screenshots/GoodLuckValley_Screenshot.png" alt="Good Luck Valley Screenshot">
+                    <img src="./media/img/screenshots/GoodLuckValley_Screenshot.png" alt="Good Luck Valley Screenshot" class="overlay-img">
                     <div class="overlay-content-genre">
                         <h3>GENRE: </h3>
                         <p>2D, Puzzle, Platformer</p>
@@ -555,7 +608,7 @@
                 </div>
                 <div class="overlay-content" id="shepherd-overlay">
                     <h1>SHEPHERD</h1>
-                    <img src="./media/img/screenshots/Shepherd_Screenshot.PNG" alt="Shepherd Screenshot">
+                    <img src="./media/img/screenshots/Shepherd_Screenshot.PNG" alt="Shepherd Screenshot" class="overlay-img">
                     <div class="overlay-content-genre">
                         <h3>GENRE: </h3>
                         <p>2D, Puzzle, Simulation</p>
@@ -578,7 +631,7 @@
                 </div>
                 <div class="overlay-content" id="pixijsnake-overlay">     
                     <h1>PIXIJSNAKE</h1>
-                    <img src="./media/img/screenshots/PixiJSnake_Screenshot.PNG" alt="PIXIJSnake Screenshot">
+                    <img src="./media/img/screenshots/PixiJSnake_Screenshot.PNG" alt="PIXIJSnake Screenshot" class="overlay-img">
                     <div class="overlay-content-genre">
                     </div>
                     <div class="overlay-content-text">
@@ -599,7 +652,7 @@
                 </div>
                 <div class="overlay-content" id="dndapi-overlay">
                     <h1>DND 5E API</h1>
-                    <img src="./media/img/screenshots/DNDAPI_Screenshot.PNG" alt="DND 5E API Screenshot">
+                    <img src="./media/img/screenshots/DNDAPI_Screenshot.PNG" alt="DND 5E API Screenshot" class="overlay-img">
                     <div class="overlay-content-genre">
                     </div>
                     <div class="overlay-content-text">
@@ -619,7 +672,7 @@
                 </div>
                 <div class="overlay-content" id="voror-overlay">
                     <h1>VOROR</h1>
-                    <img src="./media/img/screenshots/Voror_Screenshot.png" alt="Voror Screenshot">
+                    <img src="./media/img/screenshots/Voror_Screenshot.png" alt="Voror Screenshot" class="overlay-img">
                     <div class="overlay-content-genre">
                         <h3>GENRE: </h3>
                         <p>2D, Shoot-em-up</p>
@@ -644,7 +697,7 @@
                 </div>
                 <div class="overlay-content" id="soulbinder-overlay">
                     <h1>SOULBINDER</h1>
-                    <img src="./media/img/screenshots/Soulbinder_Screenshot.png" alt="Soulbinder Valley Screenshot">
+                    <img src="./media/img/screenshots/Soulbinder_Screenshot.png" alt="Soulbinder Valley Screenshot" class="overlay-img">
                     <div class="overlay-content-genre">
                         <h3>GENRE: </h3>
                         <p>2D, Boss-rush, Metroidvania</p>

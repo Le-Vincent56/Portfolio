@@ -223,25 +223,25 @@ img {
 }
 
 /* ----- SLIDESHOW SECTION ----- */
-.slideshow-container {
+.slideshow-container, .inner-slideshow-container {
     overflow: hidden;
     width: 99.85%;
 }
 
-.slides {
+.slides, .inner-slides {
     box-sizing: border-box;
     display: flex;
     flex-wrap: nowrap; /* Prevent slides from wrapping to the next row */
     transition: transform 0.5s ease-in-out;
 }
 
-.slideshow-nav {
+.slideshow-nav, .inner-slideshow-nav {
     padding: 8vh;
     background-color: #262133;
     text-align: center;
 }
 
-.slideshow-btn {
+.slideshow-btn, .inner-slideshow-btn {
     box-sizing: border-box;
     display: inline-block;
     text-decoration: none;
@@ -252,16 +252,16 @@ img {
     width: 15vw;
 }
 
-.slideshow-btn.selected {
+.slideshow-btn.selected, .inner-slideshow-btn.selected {
     color: black;
     background-color: #F7EBFF;
 }
 
-.slideshow-btn:hover {
+.slideshow-btn:hover, .inner-slideshow-btn:hover {
     background-color: #555;
 }
 
-.slide {
+.slide, .inner-slide {
     box-sizing: border-box;
     transition: transform 0.5s ease-in-out;
     flex: 0 0 100%;
@@ -270,6 +270,7 @@ img {
     align-items: flex-start;
     align-self: flex-start;
     padding: 1vh 7.5vw;
+    justify-content: center;
 }
 
 .code-flex, .writing-flex {
@@ -363,8 +364,11 @@ img {
 /* ----- MUSIC SECTION ----- */
 .sound-effect-section {
     width: 100%;
-    text-align: center;
     margin-bottom: 10vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .sound-design-btn {
@@ -375,7 +379,7 @@ img {
     background-color: black;
     border: 2px solid white;
     color: #fff;
-    margin: 0 10px;
+    margin: 0 auto;
     width: 15vw;
     transition: background-color 0.25s, color 0.25s;
     font-size: 80%;
@@ -579,6 +583,20 @@ input[type=range].volume-slider.slider-progress::-ms-fill-lower {
     cursor: pointer;
 }
 
+#goodluckvalley-soundshowcase {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sound-design-frame {
+    height: 60vh;
+    width: 75%;
+    margin: 5vh auto;
+}
+
 /* ----- WRITING SECTION ----- */
 .writing-box, .writing-box-inactive {
     box-sizing: border-box;
@@ -656,6 +674,10 @@ body.overlay-open {
     max-height: 50%;
     width: auto;
     height: auto;
+    border: 1px solid white;
+}
+
+.overlay-img {
     border: 1px solid white;
 }
 
@@ -785,7 +807,7 @@ body.overlay-open {
         flex-direction: column;
     }
 
-    .slideshow-btn {
+    .slideshow-btn, .inner-slideshow-btn {
         font-size: 65%;
     }
 
@@ -851,7 +873,7 @@ body.overlay-open {
         flex-direction: column;
     }
 
-    .slideshow-btn {
+    .slideshow-btn, .inner-slideshow-btn {
         font-size: 65%;
     }
 
