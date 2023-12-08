@@ -331,11 +331,11 @@ img {
     border-radius: 5px;
 }
 
-.csharp-label {
+.csharp-label, .cplusplus-label {
     background-color: #534D61;
 }
 
-.unity-label {
+.unity-label, .wpf-label, .monogame-label {
     background-color: #F7EBFF;
     color: black;
 }
@@ -348,7 +348,7 @@ img {
     background-color: #613B57;
 }
 
-.css-label {
+.css-label, .bulma-label {
     background-color: #1D3F37;
 }
 
@@ -356,7 +356,7 @@ img {
     background-color: #312B3E;
 }
 
-.monogame-label {
+.game-label, .app-label, .tool-label {
     background-color: #00A987;
     color: black;
 }
@@ -808,7 +808,8 @@ body.overlay-open {
     }
 
     .slideshow-btn, .inner-slideshow-btn {
-        font-size: 65%;
+        min-width: 26%;
+        font-size: 58%;
     }
 
     .code-flex {
@@ -874,6 +875,7 @@ body.overlay-open {
     }
 
     .slideshow-btn, .inner-slideshow-btn {
+        min-width: 24%;
         font-size: 65%;
     }
 
