@@ -6,7 +6,11 @@ import * as pSlideShow from "./project-slideshow.js"
 import * as music from "./music.js"
 import * as pOverlay from "./project-overlay.js"
 
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
 let init = () => {
+    setupEffects();
+
     // Init smooth links
     utils.initSmoothLinks();
 
@@ -36,6 +40,38 @@ let init = () => {
 
     // Make sure the slideshow container height is fully initialized
     pSlideShow.adjustHeightInit();
+}
+
+let setupEffects = () => {
+    // "Hacked" effect
+    let hackables = document.querySelectorAll(".hackable")
+    console.log(hackables);
+    for(const hackable of hackables) {
+        hackable.onmouseover = e => {
+            let iterations = 0;
+
+            // Show the "hacker" effect
+            const interval = setInterval(() => {
+                e.target.innerText = e.target.innerText.split("")
+                .map((letter, index) => {
+                    if(index < iterations) {
+                        return e.target.dataset.value[index];
+                    }
+
+                    return letters[Math.floor(Math.random() * 26)];
+                })
+                .join("");
+
+            // only run 10 times
+            if(iterations >= e.target.dataset.value.length) {
+                clearInterval(interval);
+            }
+
+            // Increment
+            iterations += 1 / 3;
+            }, 25);
+        };
+    }
 }
 
 init();
